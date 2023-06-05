@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/example
+        username: admin
+        password: testPassword
+        pool-size: 30
+        driverClassName: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+                generate_statistics: true
+        show-sql: true  
+    main:
+        web-application-type: servlet
+

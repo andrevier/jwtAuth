@@ -1,0 +1,13 @@
+services:
+  database:
+    image: postgres:alpine
+    restart: unless-stopped
+    container_name: example
+    environment:
+      POSTGRES_PASSWORD: testPassword
+      POSTGRES_USER: admin
+      POSTGRES_DB: example
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
