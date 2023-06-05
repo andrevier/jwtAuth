@@ -1,0 +1,2 @@
+# jwtAuth
+Authentication with JWT.
